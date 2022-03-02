@@ -8,7 +8,7 @@ Modify the samplelist.csv i.e. choosing 8-10 samples as per priority and save.
 
 Make changes in the run_nextflow.sh with respect to
 -entry [MIPS]
--bedfile [Your bedfile without .bed extension]
--path of sequences [Samples path]
+--bedfile [Your bedfile without .bed extension]
+--sequences of sequences [Samples path]
 
 Run the run_nextflow.sh file using cluster or directly
