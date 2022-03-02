@@ -350,7 +350,7 @@ process pindel {
 	script:
 	"""
 	export BAM_2_PINDEL_ADAPT=${params.pindel}/Adaptor.pm
-	sh ${params.pinde_config_script} -s ${Sample}
+	sh ${params.pindel_config_script} -s ${Sample}
 	${params.pindel}/pindel -f ${params.genome} -i $PWD/config.txt -c chr13 -o ${Sample}_pindel
 	${params.pindel}/pindel2vcf -r ${params.genome} -p ${Sample}_pindel_SI -R hg19 -d 07102019 -v ${Sample}_pindel_SI.vcf
 
